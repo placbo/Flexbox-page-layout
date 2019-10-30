@@ -1,0 +1,93 @@
+<html>
+  <head>
+    <style>
+      body {
+        color: #555555;
+        background-color: black;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+      }
+      .page-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        min-height: 100%;
+      }
+      .header {
+        background-color: lightcoral;
+        width: 100%;
+      }
+      .footer {
+        background-color: lightgoldenrodyellow;
+        width: 100%;
+      }
+      .header .text,
+      .footer .text {
+        text-align: center;
+        padding: 1rem;
+      }
+      .container {
+        margin: auto;
+        max-width: 75rem;
+        display: flex;
+        flex-grow: 1;
+      }
+      .content {
+        background-color: lightgreen;
+        order: 1;
+        flex: 1;
+        padding: 2rem;
+      }
+      .menu {
+        background-color: lightskyblue;
+        order: 2;
+        flex: 0 1 20%;
+        padding: 2rem;
+      }
+
+      @media screen and (max-width: 640px) {
+        .container {
+          display: block;
+        }
+        .content {
+          order: 2;
+        }
+        .menu {
+          order: 1;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page-wrapper">
+      <div class="header">
+        <div class="text">HEADER</div>
+      </div>
+      <div class="container">
+        <div class="content col">
+          <h4>Content</h4>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
+        </div>
+        <div class="menu col">
+          <h4>Menu</h4>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
+        </div>
+      </div>
+      <div class="footer">
+        <div class="text">Footer</div>
+      </div>
+    </div>
+  </body>
+</html>
